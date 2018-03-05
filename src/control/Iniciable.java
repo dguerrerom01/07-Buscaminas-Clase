@@ -1,16 +1,8 @@
 package control;
 
-public interface Iniciable {
-	/**
-	 * pregunta al usuario (o de alguna forma coje la informacion de el)
-	 * el numero de minas que quiere en el juego
-	 */
-	void establecerNumeroMinas();
-	/**
-	 * pregunta al usuario (o de alguna forma coje la informacion de el)
-	 * la dificultad del juego
-	 */
-	void establecerDensidad();
+interface Iniciable {
+	
+	
 	/**
 	 * En relacion al numero de minas y a la densidad se decide el numero
 	 * de filas y columnas del tablero
