@@ -9,7 +9,12 @@ public class Tablero implements AccionesTablero {
 		super();
 		assert filas>0&&columnas>0:"parametros incorrectos";
 		// TODO Auto-generated constructor stub
-		//crear el tablero con tamaño filasxcolumnas
+		casillas=new Casilla[filas][columnas];
+		for (int i = 0; i < casillas.length; i++) {
+			for (int j = 0; j < casillas[i].length; j++) {
+				casillas[i][j]=new Casilla();
+			}
+		}
 	}
 
 	
@@ -26,6 +31,14 @@ public class Tablero implements AccionesTablero {
 //		casilla[x][y].mina=true;
 		
 		return casillas[x][y].colocaMina();
+	}
+
+
+	public boolean desvelarCasilla(Casilla casilla) {
+		// TODO metodo reecursivo que a partir de un casilla desvelada (hay que saber
+		//cual es dentro del tablero) develada todas las de alrededor y sucesivas que tengan
+		//un valor de 0 minas alrededor
+		return false;
 	}
 	
 	

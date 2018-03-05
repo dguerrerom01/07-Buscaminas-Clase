@@ -8,5 +8,5 @@ public interface Marcable {
 	 * procede a marcar o desmarcar una casilla velada
 	 * @param casilla
 	 */
-	void marcarCasilla(Casilla casilla);
+	boolean marcarCasilla(Casilla casilla);
 }
