@@ -12,6 +12,9 @@ public class TableroTest {
 	@Test
 	public void testDesvelarCasilla() {
 		tablero=new  Tablero((byte)5, (byte)5);
+		tablero.colocarMina(2, 1);
+		tablero.colocarMina(2, 3);
+		tablero.calcularMinasAlrededor();		
 		
 	}
 
